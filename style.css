@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'pretendard', sans-serif;
     background-color: #F5F5F5;
     color: #000000;
     margin: 0;
@@ -44,11 +44,12 @@ p {
 }
 
 .buttons {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     gap: 10px;
     margin-top: 30px; 
-    
+    width: min-content;
+    text-align: center;
 }
 
 .button {
@@ -65,7 +66,7 @@ p {
     transition: background-color 0.3s, transform 0.3s;
     position: relative;
     width: 178px;
-    height: 71px;
+    height: 40px;
     border-radius: 40px;
     font-size: 22px;
     font-weight: 700;
