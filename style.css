@@ -120,7 +120,7 @@ p {
     background-color: transparent;
     border: none;
     color: #278C0E;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.3s;
@@ -142,29 +142,29 @@ p {
     background-color: transparent;
     border: none;
     color: #278C0E;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
 }
 .main-text {
-    font-size: 35px;
+    font-size: 50px;
     font-weight: bold;
     color: black;
     margin-bottom: 10px;
 }
 
 .detail-text {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     color: #808080;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     h1, h2 {
         font-size: 36px;
     }
 
     p {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .buttons {
@@ -330,3 +330,143 @@ p {
 }
 
 /* 기존 CSS 유지 */
+
+/* FAQ페이지 */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-size: 16px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+        }
+        .logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .nav-items {
+            display: flex;
+            gap: 20px;
+        }
+        .download-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .main-content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            padding: 5px 15px;
+            border: 1px solid #4CAF50;
+            border-radius: 20px;
+            background-color: white;
+            color: #4CAF50;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .filter-btn.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .faq-answer {
+            display: none;
+            padding-top: 10px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .page-btn {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            background-color: white;
+            cursor: pointer;
+        }
+        .page-btn.active {
+            background-color: #4CAF50;
+            color: white;
+            border-color: #4CAF50;
+        }
+        
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-container {
+                margin-top: 10px;
+                width: 100%;
+                justify-content: space-between;
+            }
+            .nav-items {
+                width: 100%;
+                justify-content: space-between;
+            }
+            .download-btn {
+                margin-top: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            .main-content {
+                padding: 10px;
+                
+            }
+            .filters {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .filter-btn {
+                width: 100%;
+            }
+        }
+
+   
+
+   

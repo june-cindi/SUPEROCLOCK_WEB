@@ -7,10 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="logo"></div>
+        <div class="nav-container">
+        <nav class="nav-items">
+            <span>브랜드</span>
+            <span>서비스</span>
+            <span>리뷰</span>
+        </nav>
+        <button class="download-btn">다운로드</button>
+        </div>
+    </header>
     <!-- 기존 HTML 내용은 그대로 유지 -->
     <section class="section">
         <div class="container text-center">
-            <h1>중요한 일에 집중하라!</h1>
+            <h1>몰입으로 향하는 작은 습관</h1>
             <h2>수퍼어클락과 함께</h2>
             <p>당신만의 맞춤 타이머</p>
             <div class="buttons">
@@ -26,8 +37,8 @@
 
     <section class="section second-section">
         <div class="container text-center">
-            <h3>한번에 하나씩 <br>몰입을 도와주는 타이머</h3>
-            <h4>수퍼어클락과 함께 <br>지금 바로 집중해봐요</h4>
+            <h3>한번에 하나씩 집중하는 습관을 만드는 방법</h3>
+            <h4>당신의 일상에 몰입을 더해줄 수 있는 타이머<br>수퍼어클락과 함께해요.</h4>
         </div>
     </section>
 
@@ -43,11 +54,12 @@
                 </div>
                 <div id="timer-content">
                     <div class="main-text">할 일마다 타이머 만들기</div>
-                    <div class="detail-text">해야할 일마다 타이머를 만들 수 있어요.<br> 할 일을 완료한 뒤 얼마나 걸렸는지 실제 작업 시간을 확인하고 <br>시간을 관리하세요.</div>
+                    <div class="detail-text">해야할 일마다 타이머를 만들 수 있어요.<br> 할 일을 완료한 뒤 총 누적시간을 확인하고 <br>작업 시간을 관리하세요.</div>
                 </div>
                 <div id="hashtag-content" style="display: none;">
                     <div class="main-text">해시태그로 할 일 묶어주기</div>
-                    <div class="detail-text">타이머 마다 해시태그를 달 수 있어요.<br> 여러 개의 타이머들을 묶어서 할 일들을 손쉽게 관리하세요.</div>
+                    <div class="detail-text">타이머마다 해시태그를 달 수 있어요.<br> 해시태그를 달아 할 일을 묶어주고 <br>통계를 통해 작업 시간을 관리하세요
+                    .</div>
                 </div>
             </div>
         </div>
@@ -87,7 +99,7 @@
             <div class="text">
                 <div class="tag-text">리캡</div>
                 <div class="main-text">지난 한 주<br>한 눈에 훑어보기</div>
-                <div class="detail-text">한 주 동안의 기록을 모아서 볼 수 있어요.<br>자주 사용한 타이머와 누적시간을 보고<br>스스로에게 피드백을 줄 수 있어요.</div>
+                <div class="detail-text">한 주 동안의 기록을 모아서 볼 수 있어요.<br>자주 사용한 타이머와 누적시간을 보고<br>자신에게 피드백을 줄 수 있어요.</div>
             </div>
         </div>
     </section>
@@ -100,7 +112,7 @@
             <div class="text">
                 <div class="tag-text">선물하기</div>
                 <div class="main-text">띵동, 선물이<br>도착했습니다</div>
-                <div class="detail-text">가족, 친구, 동료 등 주변의 <br>소중한 사람들에게 타이머를 선물하여<br>몰입의 가치를 나눠 보세요.</div>
+                <div class="detail-text">선물하기를 통해 <br>소중한 사람들에게<br>몰입의 가치를 나눠 보세요.</div>
             </div>
         </div>
     </section>
@@ -133,7 +145,20 @@
   </section>
   
   <!-- 기존 코드 유지 -->
-
-    <script src="script.js"></script>
+  <main class="main-content">
+    <h1>FAQ</h1>
+    <div class="filters">
+        <button class="filter-btn active" data-category="usage">이용 문의</button>
+        <button class="filter-btn" data-category="payment">결제</button>
+        <button class="filter-btn" data-category="account">계정</button>
+    </div>
+    <div class="faq-list">
+        <!-- FAQ items will be dynamically inserted here -->
+    </div>
+    <div class="pagination">
+        <!-- Pagination buttons will be dynamically inserted here -->
+    </div>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
