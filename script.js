@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const faqData = [
-    { category: "usage", question: "Q. 타이머 색상을 바꾸고 싶어요.", answer: "타이머 색상 변경에 대한 답변..." },
-    { category: "usage", question: "Q. 스마트폰에서 다른 앱을 사용할 때도 타이머가 작동했으면 좋겠어요.", answer: "백그라운드 실행에 대한 답변..." },
+    { category: "usage", question: "Q. 타이머 종료 알림을 바꾸고 싶어요.", answer: "A: 프로필 - 설정 에서 알림 소리의 크기 및 종류를 바꿀 수 있고, 진동, 빛으로도 바꿀 수 있습니다. " },
+    { category: "usage", question: "Q. 홈화면 색상을 바꾸고 싶어요.", answer: "프로필 - 설정 - 테마 변경 에서 홈의 테마 색상을 변경할 수 있습니다.    " },
     { category: "payment", question: "Q. 결제 방법은 어떤 것들이 있나요?", answer: "다양한 결제 방법에 대한 설명..." },
     { category: "account", question: "Q. 계정 삭제는 어떻게 하나요?", answer: "계정 삭제 절차에 대한 설명..." },
     { category: "usage", question: "Q. 알림음을 변경할 수 있나요?", answer: "알림음 변경 방법에 대한 설명..." },
